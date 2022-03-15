@@ -10,10 +10,13 @@ import { Router } from '@angular/router';
 })
 export class NavComponent implements OnInit {
 
-  constructor(private router: Router, private authService: AuthService, private toast: ToastrService) { }
+  constructor(
+    private router:Router,
+    private authService: AuthService,
+    private toast: ToastrService) { }
 
   ngOnInit(): void {
-    this.router.navigate(['home'])
+    this.router.navigate(['tecnicos/create'])
   }
   logout() {
     this.router.navigate(['login'])
