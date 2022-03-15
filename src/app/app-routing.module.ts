@@ -9,7 +9,7 @@ import { RouterModule, Routes } from "@angular/router";
 const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { 
-    path: "", component: NavComponent, canActivate: [AuthGuard], children: [
+    path: "", component: NavComponent, canActivate: [/*AuthGuard*/], children: [
       { path: 'home', component: HomeComponent },
       {path: 'tecnicos', component: TecnicoListComponent}
     ]
